@@ -88,6 +88,7 @@ class TrackDetailsFragment : Fragment() {
 
         binding.tvTrackName.text = track.trackName
         binding.tvTrackGenre.text = track.primaryGenre
+        binding.tvPrice.text = track.price.toString()
         
             if (track.kind == "song"){
                 controlSound(track.previewUrl)

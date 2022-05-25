@@ -103,6 +103,7 @@ class TunesViewModel(private val TunesApiService: TunesApiService) : ViewModel()
                         track.primaryGenre = this.primaryGenreName
                         track.kind = this.kind
                         track.previewUrl = this.previewUrl
+                        track.price = this.trackPrice
                         trackDetailsLiveData.postValue(track)
                     }
                     trackDetailsLoadingStateLiveData.postValue(LoadState.Loaded)
